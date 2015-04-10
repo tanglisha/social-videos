@@ -1,0 +1,11 @@
+<h1>Videos</h1>
+
+<ul id="video-list">
+  <% @videos.each do |video| %>
+    <li class="video" id="video-<%= video.id %>">
+      <%= video.title %>
+    </li>
+  <% end %>
+</ul>
+
+<%= render 'form' %>

@@ -1,0 +1,12 @@
+require 'spec_helper'
+
+describe "Video" do
+
+  describe "Get /videos" do
+    it "display some videos" do
+      visit videos_path
+      page.should have_content 'Episode 1'
+    end
+  end
+
+end
