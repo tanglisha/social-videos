@@ -5,7 +5,7 @@ class VideosController < ApplicationController
   end
 
   def create
-    Video.create params[:video].permit(:title)
+    Video.create params[:video].permit(:title, :link)
     redirect_to :back
   end
 
@@ -17,7 +17,7 @@ class VideosController < ApplicationController
     video = Video.find params[:id]
 
     # Try to update the object
-    if video.update_attributes params[:video].permit(:title)
+    if video.update_attributes params[:video].permit(:title, :link)
       redirect_to videos_path, :notice => 'Your video was updated'
     else
       redirect_to :back, :notice => 'There was an error saving your video'

@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+form
+{
+    border: 1px solid #ccc;
+    padding: 1ex;
+}
+form input, form label
+{
+    width: 49%;
+}
+form label
+{
+    text-align: right;
+}
+form input
+{
+    text-align: left;
+}
+form input[type=submit]
+{
+    width: 100%;
+    text-align: center;
+}

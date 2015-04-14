@@ -2,7 +2,8 @@ class CreateVideos < ActiveRecord::Migration
   def change
     create_table :videos do |t|
       t.string :external_id
-      t.string :string
+      t.string :description
+      t.string :link
       t.string :source
       t.string :title
 

@@ -15,7 +15,8 @@ ActiveRecord::Schema.define(version: 20150328051821) do
 
   create_table "videos", force: :cascade do |t|
     t.string   "external_id"
-    t.string   "string"
+    t.string   "description"
+    t.string   "link"
     t.string   "source"
     t.string   "title"
     t.datetime "created_at",  null: false
